@@ -36,7 +36,7 @@ body {
 }
 
 
-.page1, .page2, .page3 {
+.page1, .page2, .page3 , .page4 {
     width: 100%;
     height: 100%;
     position: relative;
@@ -45,7 +45,7 @@ body {
 
 
 
-.page1 .content, .page3 .content {
+.page1 .content, .page3 .content , .page4 .content{
     padding: 20px;
     box-sizing: border-box;
     height: calc(100% - 40px);
@@ -77,6 +77,13 @@ body {
 }
 
 
+.page4 .division {
+    flex: 1; /* Make the divisions take up equal space */
+    margin: 10px; /* Add some space between the divisions */
+    text-align: center;
+}
+
+
 .page1 .division img {
     width: 100%;
     height: 100%;
@@ -84,6 +91,12 @@ body {
 }
 
 .page3 .division img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire div */
+}
+
+.page4 .division img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ensure the image covers the entire div */
@@ -123,6 +136,15 @@ marquee {
     height: 100%;
 }
 
+.page4 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
 
 
 .division a {
@@ -134,6 +156,13 @@ marquee {
     text-decoration: none;
     color: inherit;
 }
+
+.page4 .division a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 
 .division p {
     margin-top: 10px;
@@ -150,6 +179,12 @@ marquee {
     color: #666;
 }
 
+.page4 .division p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
 
 .page2 .division {
     display: flex;
