@@ -43,7 +43,7 @@ $(document).ready(function() {
                     "color": "#000000"
                 },
                 "image": {
-                    "src": "./img/leaf.png", // Ensure you have a leaf image in your directory
+                    "src": "./js/leaf.png", // Ensure you have a leaf image in your directory
                     "width": 100,
                     "height": 100
                 }
