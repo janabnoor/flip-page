@@ -147,12 +147,12 @@ marquee {
 
 .marquee {
         position: absolute;
-	bottom: 2px; /* Position at the bottom */
+	bottom: 1px; /* Position at the bottom */
        
         left: 0;
         width: 100%;
         text-align: center;
-        font-size: 15px;
+        font-size: 10px;
         font-weight: bold;
         color: #8B0000; /* Dark red color */
         z-index: 10;
