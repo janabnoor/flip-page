@@ -132,17 +132,20 @@ body {
 
 
 .marquee-container {
-    margin: 0 0 0 0; /* Set top margin to 0 and bottom margin to 20px */
-    padding: 0; /* Remove padding */
+    width: 100%; /* Ensures the container is as wide as the content */
+    overflow: hidden; /* Hides any overflow */
+    margin-top: 10px; /* Adds space between the image and the marquee */
+    text-align: center;
 }
 
-
-marquee {
-    font-size: 10px;
-    color: #333;
+.marquee {
+    display: inline-block;
+    white-space: nowrap; /* Prevents text wrapping */
+    font-size: 15px;
+    font-weight: bold;
+    color: #8B0000; /* Dark red color */
+    animation: bounce 10s linear infinite; /* Adjusted speed for better visibility */
 }
-
-
 
 
 .marquee {
@@ -160,15 +163,16 @@ marquee {
         animation: bounce 40s ease-in-out infinite;
     }
 
+
     @keyframes bounce {
-        40% {
-            transform: translateX(-50%);
+        100% {
+            transform: translateX(-15%);
         }
         50% {
             transform: translateX(50%);
         }
-        80% {
-            transform: translateX(-50%);
+       100% {
+            transform: translateX(-15%);
         }
     }
 
