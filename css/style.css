@@ -138,7 +138,7 @@ body {
 
 
 marquee {
-    font-size: 8px;
+    font-size: 10px;
     color: #333;
 }
 
@@ -147,12 +147,12 @@ marquee {
 
 .marquee {
         position: absolute;
-	bottom: 1px; /* Position at the bottom */
+	bottom: 0px; /* Position at the bottom */
        
         left: 0;
         width: 100%;
         text-align: center;
-        font-size: 10px;
+        font-size: 14px;
         font-weight: bold;
         color: #8B0000; /* Dark red color */
         z-index: 10;
@@ -161,14 +161,14 @@ marquee {
     }
 
     @keyframes bounce {
-        0% {
-            transform: translateX(-100%);
+        40% {
+            transform: translateX(-50%);
         }
         50% {
-            transform: translateX(100%);
+            transform: translateX(50%);
         }
-        100% {
-            transform: translateX(-100%);
+        80% {
+            transform: translateX(-50%);
         }
     }
 
@@ -188,6 +188,7 @@ marquee {
     justify-content: center;
     align-items: center;
     height: 100%;
+position: relative; /* Ensure the content div is the reference point */
 }
 
 .page3 .content {
